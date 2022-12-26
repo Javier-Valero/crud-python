@@ -16,12 +16,6 @@ print("misvariables de entrono: ", environ.get(
 app = Flask(__name__)
 key = Fernet.generate_key()
 
-""" host = 'localhost'
-port = '5432'
-database = 'usersdb'
-username = 'postgres'
-password = '666666' """
-
 host = environ.get('DB_HOST')
 database = environ.get('DB_NAME')
 username = environ.get('DB_USER')
