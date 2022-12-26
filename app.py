@@ -22,7 +22,7 @@ username = environ.get('DB_USER')
 password = environ.get('DB_PASSWORD')
 port = environ.get('DB_PORT')
 
-print(host, database, username, password, port)
+print("DATOS: ", host, database, username, password, port)
 
 
 def get_db_connection():
